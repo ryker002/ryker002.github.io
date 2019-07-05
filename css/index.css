@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    background-color: #18282D;
+    overflow-x: hidden;
+}
+
+#header {
+    background-image: url('../img/bg.jpg');
+    height: 100vh;
+}
+
+/* Font Styles */
+
+.effra {
+    font-family: effra, sans-serif; 
+}
+
+/* Circle Profile */
+
+.circle-avatar{
+    max-width: 50%;
+    width:50%;
+    height:auto;
+    display:block;
+    padding-top:50%;
+    border-radius:50%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    }
+
+/* Particles */
+
+#particle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+
+/* Parallax Effect */
+
+.parallaxAboutMe {
+    background-image: url(https://pro2-bar-s3-cdn-cf6.myportfolio.com/9b8e06484487e574dd534783e49e6c2f/7ee6a545-cab1-4897-9812-51b31335e4d9_rw_1920.jpg?h=abd89101527bc0ad8de8035c848ad90d);
+    height: 100%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Custom Modications */
+
+    .bg-c-dark {
+        background: #D0542A;
+    }
+
+    .text-c-dark {
+        color: #D0542A;
+    }
+
+    .text-c-light {
+        color: #F1EAEA;
+    }
