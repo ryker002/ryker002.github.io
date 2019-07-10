@@ -29,16 +29,14 @@ particleground(document.getElementById('particle'), {
     parallaxMultiplier: 15,
 });
 
-// Scroll Magic
-
-// init controller
-// var controller = new ScrollMagic.Controller();
-
-// lock navigation
-
-// var scene00 = new ScrollMagic.Scene({
-//     triggerElement: "nav",
-//     triggerHook: 0
-// })
-//     .setPin("nav");
-//     scene00.addTo(controller);
+// init Masonry
+var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });  
