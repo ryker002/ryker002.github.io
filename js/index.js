@@ -23,10 +23,11 @@ particleground(document.getElementById('particle'), {
     maxSpeedY: 0.2,
     directionX: 'center',
     directionY: 'center',
-    density: 5500,
+    density: 15000,
     particleRadius: 5,
     proximity: 80,
     parallaxMultiplier: 15,
+    curvedLines: true,
 });
 
 // init Masonry
@@ -40,3 +41,7 @@ var $grid = $('.grid').masonry({
   $grid.imagesLoaded().progress( function() {
     $grid.masonry();
   });  
+
+  // Animation Scroll
+
+  new WOW().init();
