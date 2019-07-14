@@ -133,3 +133,18 @@ body {
   display: block;
   max-width: 100%;
 }
+
+/* Modal Modifications */
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
