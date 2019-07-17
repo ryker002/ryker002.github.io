@@ -62,3 +62,10 @@ function galleryObject(name) {
 galleryObject('trevorBody');
 galleryObject('nickandpeterBody');
 galleryObject('codeyandkylieBody');
+galleryObject('mattandsamBody');
+galleryObject('katBody');
+galleryObject('davidandallisonBody');
+galleryObject('nikkiBody');
+galleryObject('manipulationBody');
+galleryObject('danielandalexBody');
+galleryObject('danielBody');
