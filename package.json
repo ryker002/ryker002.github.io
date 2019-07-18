@@ -1,0 +1,30 @@
+{
+  "name": "jamesboothomepage",
+  "version": "1.0.0",
+  "description": "Homepage for James made using Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryker002/JamesBootHomepage.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "homepage",
+    "portfolio",
+    "James",
+    "Lewandowski"
+  ],
+  "author": "James Lewandowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryker002/JamesBootHomepage/issues"
+  },
+  "homepage": "https://github.com/ryker002/JamesBootHomepage#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
