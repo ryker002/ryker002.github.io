@@ -9,7 +9,7 @@ class Card extends React.Component {
   }
 
   render() {
-    return e(
+    return(
         <div className="col-md-12 col-lg-3 col-xl-2 mb-2">
         <div className="card border-0 shadow-lg bg-c-dark text-light js-tilt js-tilt-glare wow fadeInUp" data-tilt>
             <img className="card-img-top"
@@ -29,5 +29,6 @@ class Card extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(Card), domContainer);
+export default Card;
+// let domContainer = document.querySelector('#recentProjects');
+// ReactDOM.render(<Card imageUrl="" imageAlt="" title="Project 1" description="none"/>, domContainer);
