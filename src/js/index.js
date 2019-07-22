@@ -69,3 +69,5 @@ galleryObject('nikkiBody');
 galleryObject('manipulationBody');
 galleryObject('danielandalexBody');
 galleryObject('danielBody');
+galleryObject('dirtyCodeBody');
+galleryObject('nursingAppBody');

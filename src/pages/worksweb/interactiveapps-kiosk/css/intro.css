@@ -1,0 +1,51 @@
+.intro_trashcan {
+    position: absolute;
+    left: 1400px;
+    bottom: 10px;
+    width: 80px;
+    height: 120px;
+    background-color: gray;
+    /* margin-left: 1400px;
+    margin-bottom: 10px; */
+    box-shadow: #333 1px 1px 10px;
+}
+
+.trash {
+    /* width: 50px;
+    height: 50px;
+    background-color: blue;
+    font-size: 5px; */
+} 
+
+._001 {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+
+._002 {
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+}
+
+._003 {
+    position: absolute;
+    bottom: 150px;
+    left: 350px;
+}
+
+._004 {
+    position: absolute;
+    bottom: 125px;
+    left: 465px;
+}
+
+#messages {
+    position: absolute;
+    /* bottom: 225px;
+    left: 175px; */
+    top: 10px;
+    left: 5px;
+    z-index: 100;
+}

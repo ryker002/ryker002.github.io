@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .wb {
+                width:300px;
+                height:900px;
+                position: absolute;
+                top:0;
+                left:200px;
+                background-color: blue;
+                transform-origin: center top;
+            }
+        </style>
+</head>
+<body>
+    
+
+
+<div class="wb">
+ <img src="images/wreckingball.svg" alt="">    
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+<script src="js/TweenMax.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/utils/Draggable.min.js"></script> -->
+<script src="js/Draggable.min.js"></script>
+<script>
+TweenMax.to($(".wb"),.75,{rotation:90});
+</script>
+</body>
+</html>
