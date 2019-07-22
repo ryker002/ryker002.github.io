@@ -7,13 +7,13 @@
     <!-- FontAwesome Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap Styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/src/css/bootstrap.min.css" rel="stylesheet">
     <!-- MDB Resource -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="/src/css/mdb.min.css" rel="stylesheet">
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/dhn6pkx.css">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/src/css/index.css">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>James Lewandowski | Portfolio</title>
@@ -45,13 +45,13 @@
                         aria-expanded="false">Works</a>
 
                     <div class="dropdown-menu bg-c-dark">
-                        <a class="dropdown-item text-light effra" href="works-photography.html">Photography<span
+                        <a class="dropdown-item text-light effra" href="/src/pages/works-photography.html">Photography<span
                                 class="sr-only">Photography Projects</span></a>
-                        <a class="dropdown-item text-light effra" href="works-ui.html">UI | UX Design<span
+                        <a class="dropdown-item text-light effra" href="/src/pages/works-ui.html">UI | UX Design<span
                                 class="sr-only">User Interface and User Experience Design Projects</span></a>
-                        <a class="dropdown-item text-light effra" href="works-web.html">Web Development<span
+                        <a class="dropdown-item text-light effra" href="/src/pages/works-web.html">Web Development<span
                                 class="sr-only">Web Design and Development Projects</span></a>
-                        <a class="dropdown-item text-light effra" href="works-graphic.html">Graphic Design<span
+                        <a class="dropdown-item text-light effra" href="/src/pages/works-graphic.html">Graphic Design<span
                                 class="sr-only">Graphic Design Projects</span></a>
                     </div>
                 </li>
@@ -117,7 +117,7 @@
                         <h4 class="card-title display-5 text-uppercase effra"><i
                                 class="fas fa-camera fa-md text-dark"></i> Photography</h4>
                         <p class="card-text text-light">Photoshoots and Projects
-                            <a type="button" href="works-photography.html" class="btn btn-dark ml-5 float-right">See
+                            <a type="button" href="/src/pages/works-photography.html" class="btn btn-dark ml-5 float-right">See
                                 More</a></p>
 
                     </div>
@@ -133,7 +133,7 @@
                         <h4 class="card-title display-5 text-uppercase effra"><i
                                 class="fab fa-sketch fa-md text-dark"></i> User Interface</h4>
                         <p class="card-text text-light">User Interface and User Exprience Designs
-                            <a type="button" href="works-ui.html" class="btn btn-dark ml-5 float-right">See More</a></p>
+                            <a type="button" href="/src/pages/works-ui.html" class="btn btn-dark ml-5 float-right">See More</a></p>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                     <div class="card-body">
                         <h4 class="card-title display-5 text-uppercase effra"><i
                                 class="fas fa-file-code fa-md text-dark"></i> Web Development</h4>
-                        <p class="card-text text-light">Web Projects and Creations<a type="button" href="works-web.html"
+                        <p class="card-text text-light">Web Projects and Creations<a type="button" href="/src/pages/works-web.html"
                                 class="btn btn-dark ml-5 float-right">See More</a>
                         </p>
                     </div>
@@ -162,7 +162,7 @@
                         <h4 class="card-title display-5 text-uppercase effra"><i
                                 class="fab fa-adobe fa-md text-dark"></i> Graphic Design</h4>
                         <p class="card-text text-light">Graphic Design and Illustrative Projects<a type="button"
-                                href="works-graphic.html" class="btn btn-dark ml-5 float-right">See More</a>
+                                href="/src/pages/works-graphic.html" class="btn btn-dark ml-5 float-right">See More</a>
                         </p>
                     </div>
                 </div>
@@ -285,37 +285,41 @@
         </div>
     </div>
 
+
+            <div id="root"></div>
+
+            
+
+
     <!-- React -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <!-- Babel -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- Jquery Script -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/src/js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="/src/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/src/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="/src/js/mdb.min.js"></script>
     <!-- REMOVE ON DEPLOY -->
-    <script src="js/holder.min.js"></script>
+    <script src="/src/js/holder.min.js"></script>
     <!-- Tilt.js -->
-    <script src="js/tilt.jquery.js"></script>
+    <script src="/src/js/tilt.jquery.js"></script>
     <!-- ParticleGround -->
-    <script src="js/jquery.particleground.min.js"></script>
+    <script src="/src/js/jquery.particleground.min.js"></script>
     <!-- ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     <!-- MDBootstrap Masonry  -->
-    <script type="text/javascript" src="js/addons/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/src/js/addons/masonry.pkgd.min.js"></script>
 
-    <script type="text/javascript" src="js/addons/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/src/js/addons/imagesloaded.pkgd.min.js"></script>
     <!-- Custom Javascript -->
-    <script src="js/index.js"></script>
-    <!-- Components -->
-    <script src="src/components/card/card.js"></script>
-    <script src="src/components/recentProjects.js"></script>
+    <script src="/src/js/index.js"></script>
+
 </body>
 
 </html>
