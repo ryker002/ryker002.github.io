@@ -1,0 +1,618 @@
+/*
+TODO | 
+Fix Mobile and Tablet Header (Currently set to Display:none;)
+Fix Text *
+Add Navigational Links
+*/
+
+/* UNIVERSAL STYLES */
+
+body {
+    background: url("bg.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+    background-color: #222222;
+    overflow-x: hidden;
+}
+
+
+header {
+    background-color: #121212;
+    font-family: "mr-eaves_sans", sans-serif;
+    color: white;
+    left: 0;
+    height: 10%;
+    z-index: 1199;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    background-color: #222222;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/*NAVIGATION STYLES */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5.2%;
+    background-color: #121212;
+    z-index: 1200;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 12px solid #121212;
+}
+
+nav>ul {
+    height: 5%;
+    width: 100%;
+    display: -webkit-flex;
+    list-style: none;
+    justify-content: space-evenly;
+    z-index: 1201;
+    padding: 0;
+    margin: 0;
+}
+
+nav>ul>li {
+    width: 20%;
+    height: 5%;
+    z-index: 1202;
+}
+
+nav>ul>li>a>img {
+    position: fixed;
+    top: 0;
+    width: auto;
+    height: 5%;
+    top: 0;
+    z-index: 1203;
+}
+
+.jonnav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 5%;
+    background-color: #C9423C;
+}
+
+.damiannav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 5%;
+    background-color: #0280B0;
+}
+
+.jaknav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 5%;
+    background-color: #651B1B;
+}
+
+.connornav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 5%;
+    background-color: #35944B;
+}
+
+.spidernav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 5%;
+    background-color: #1C2949;
+}
+
+/*DIVIDER DARK STYLES */
+#children {
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    background-color: #414141;
+    box-shadow: 1px 0px 12px 2px #121212;
+    z-index: 100;
+}
+
+#children>div {
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid black;
+    z-index: 101;
+}
+
+#children>div>img {
+    width: auto;
+    height: 15%;
+    z-index: 102;
+}
+
+/* CHILDREN IMAGES */
+
+.jon {
+    background: url("navicons/jon-a.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.jon:after {
+    transition: all 0.0s ease 0.0s;
+    content: "";
+    position: absolute;
+    background-color: #C9423C;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0vw;
+    transform: translateX(-100%);
+}
+
+.damian {
+    background: url("navicons/damian-a.png") no-repeat #383838;
+    background-size: contain;
+    background-position: left;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.damian:after {
+    transition: all 0.0s ease 0.0s;
+    content: "";
+    position: absolute;
+    background-color: #0280b0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0vw;
+    transform: translateX(100%);
+}
+
+.jakjak {
+    background: url("navicons/jak-a.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.jakjak:after {
+    transition: all 0.0s ease 0.0s;
+    content: "";
+    position: absolute;
+    background-color: #651B1B;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0vw;
+    transform: translateX(-100%);
+}
+
+.connor {
+    background: url("navicons/connor-a.png") no-repeat #383838;
+    background-size: contain;
+    background-position: left;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.connor:after {
+    transition: all 0.0s ease 0.0s;
+    content: "";
+    position: absolute;
+    background-color: #35944B;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0vw;
+    transform: translateX(100%);
+}
+
+.spider {
+    background: url("navicons/spider-a.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.spider:after {
+    transition: all 0.0s ease 0.0s;
+    content: "";
+    position: absolute;
+    background-color: #1C2949;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0vw;
+    transform: translateX(-100%);
+}
+
+/* ON HOVER EVENTS */
+.jon:hover {
+    background: url("navicons/jon-ahoverchecked.png") no-repeat, #C9423C;
+    background-size: contain;
+    background-position: right;
+}
+
+.jon:hover:after {
+    width: 100vw;
+    transition: all 0.5s ease 0.2s;
+}
+
+.damian:hover {
+    background: url("navicons/ahoverchecked2.png") no-repeat, #0280b0;
+    background-size: contain;
+    background-position: left;
+}
+
+.damian:hover:after {
+    width: 100vw;
+    transition: all 0.5s ease 0.2s;
+}
+
+.jakjak:hover {
+    background: url("navicons/Jak-ahoverchecked.png") no-repeat, #651B1B;
+    background-size: contain;
+    background-position: right;
+}
+
+.jakjak:hover:after {
+    width: 100vw;
+    transition: all 0.5s ease 0.2s;
+}
+
+.connor:hover {
+    background: url("navicons/Connor-ahoverchecked.png") no-repeat, #35944B;
+    background-size: contain;
+    background-position: left;
+}
+
+.connor:hover:after {
+    width: 100vw;
+    transition: all 0.5s ease 0.2s;
+}
+
+.spider:hover {
+    background: url("navicons/Spider-ahoverchecked.png") no-repeat, #1C2949;
+    background-size: contain;
+    background-position: right;
+}
+
+.spider:hover:after {
+    width: 100vw;
+    transition: all 0.5s ease 0.2s;
+}
+
+/* INDIVIDUAL FLIP STYLES */
+#flip {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+#noflip {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* DIVIDER INDIVIDUAL STYLES */
+
+/* TEXT STYLES */
+.titles {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    width: 20%;
+    padding-left: 35%;
+}
+
+.titles-flip {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    width: 20%;
+}
+
+.titles b {
+    font-family: "mr-eaves-sans", sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.titles-flip b {
+    font-family: "mr-eaves-sans", sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.text {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    width: 40%;
+}
+
+.text p {
+    font-family: "mr-eaves-sans", sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+.text-flip {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    width: 40%;
+    padding-right: 35%;
+}
+
+.text-flip p {
+    font-family: "mr-eaves-sans", sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+/* FOOTER and HEADER STYLES */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #121212;
+    font-family: "mr-eaves_sans", sans-serif;
+    font-size: 8px;
+    color: white;
+    left: 0;
+    z-index: 1100;
+}
+
+footer p {
+    padding-left: 10%;
+    padding-right: 60%;
+
+}
+
+/* MEDIA QUERIES */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+nav {
+    position: absolute;
+    top: 0;
+    height: 10%;
+}
+
+nav>ul, nav>ul>li, nav>ul>li>a>img, .jonnav, .damiannav, .jaknav, .connornav, .spidernav {
+    height: 9.5%;
+}
+
+footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+    display: none;
+}
+
+.wrapper {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+.titles b, .titles-flip b, .text b, .text-flip b {
+    font-size: 20px;
+}
+
+.title p, .title-flip p, .text p, .text-flip p {
+    font-size: 18px;
+}  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    nav {
+        position: absolute;
+        top: 0;
+        height: 10%;
+    }
+    
+    nav>ul, nav>ul>li, nav>ul>li>a>img, .jonnav, .damiannav, .jaknav, .connornav, .spidernav {
+        height: 9.5%;
+    }
+    
+    footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 80%;
+        left: 5%;
+        right: 5%;
+    }
+  
+    .titles b, .titles-flip b, .text b, .text-flip b {
+        font-size: 20px;
+    }
+    
+    .title p, .title-flip p, .text p, .text-flip p {
+        font-size: 18px;
+    }  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    nav {
+        position: absolute;
+        top: 0;
+        height: 10%;
+    }
+    
+    nav>ul, nav>ul>li, nav>ul>li>a>img, .jonnav, .damiannav, .jaknav, .connornav, .spidernav {
+        height: 9.5%;
+    }
+    
+    footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+  
+    .titles b, .titles-flip b, .text b, .text-flip b {
+        font-size: 22px;
+    }
+    
+    .title p, .title-flip p, .text p, .text-flip p {
+        font-size: 20px;
+    }  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    nav {
+        position: absolute;
+        top: 0;
+        height: 10%;
+    }
+    
+    nav>ul, nav>ul>li, nav>ul>li>a>img, .jonnav, .damiannav, .jaknav, .connornav, .spidernav {
+        height: 9.5%;
+    }
+    
+    footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+  
+    .titles b, .titles-flip b, .text b, .text-flip b {
+        font-size: 22px;
+    }
+    
+    .title p, .title-flip p, .text p, .text-flip p {
+        font-size: 20px;
+    }  
+  
+}
+
+/*
+    ##Device = iPhone 4, 5, 6, 7, 8, X (PORTRAIT)
+    ##Screen = B/w 375px to 812px
+*/
+
+@media (min-width: 320px) and (max-width: 812px) {
+    
+    nav {
+        position: absolute;
+        top: 0;
+        height: 10%;
+    }
+    
+    nav>ul, nav>ul>li, nav>ul>li>a>img, .jonnav, .damiannav, .jaknav, .connornav, .spidernav {
+        height: 9.5%;
+    }
+    
+    footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+  
+    .titles b, .titles-flip b, .text b, .text-flip b {
+        font-size: 22px;
+    }
+    
+    .title p, .title-flip p, .text p, .text-flip p {
+        font-size: 20px;
+    }  
+  
+}
+
+/* 
+    ##Device = Unknown 
+    ##Screen = B/w 0px to 320px
+*/
+
+@media (min-width: 0px) and (max-width: 320px) {
+    
+    nav, footer, .jon:after, .jon:hover:after, .damian:after, .damian:hover:after, .jakjak:after, .jakjak:hover:after, .connor:after, .connor:hover:after, .spider:after, .spider:hover:after {
+        display: none;
+    }
+    
+    .wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+  
+    .titles b, .titles-flip b, .text b, .text-flip b {
+        font-size: 22px;
+    }
+    
+    .title p, .title-flip p, .text p, .text-flip p {
+        font-size: 20px;
+    }  
+  
+}

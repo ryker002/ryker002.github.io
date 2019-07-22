@@ -1,0 +1,282 @@
+/* ==== Universal Styles ==== */
+
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* ==== Body Styles ==== */
+
+body {
+    background-color: #242329;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* ==== Header | Title | Category Styles ==== */
+
+.header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
+
+.header a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.title {
+    font-weight: 600;
+    color: #0A0A0B;
+    opacity: 1;
+    z-index: 10;
+}
+
+.title h1 {
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    text-align: center;
+    vertical-align: center;
+    font-size: 60px;
+    z-index: 11;
+}
+
+.title svg {
+    position: absolute;
+    top: 46vh;
+    left: 39vw;
+    width: 30%;
+    z-index: 10;
+}
+.cattitle {
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    writing-mode: vertical-lr;
+    height: 100%;
+    width: 5vw;
+    background-color: hsla(240, 10%, 8%, 0.9);
+    transition: all 0.5s ease-in-out;
+    opacity: 0; 
+}
+
+.cattitle p {
+    padding-bottom: 50px;
+    text-align: right;
+}
+
+.category {
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    border: 4px solid white;
+}
+
+.cat1 {
+    grid-column-start: 1;
+    background-image: url("img/cat1.png");
+}
+
+.cat1:hover {
+    opacity: 1;
+}
+
+.category:hover .cattitle {
+    opacity: 1;
+}
+
+
+
+.cat2 {
+    grid-column-start: 2;
+    background-image: url("img/cat2.png");
+}
+
+.cat2:hover {
+    opacity: 1;
+}
+
+.cat3 {
+    grid-column-start: 1;
+    background-image: url("img/cat3.png");
+}
+
+.cat3:hover {
+    opacity: 1;
+}
+
+.cat4 {
+    grid-column-start: 2;
+    background-image: url("img/cat4.png");
+}
+
+.cat4:hover {
+    opacity: 1;
+}
+
+.cat1:hover .header {
+    grid-template-columns: 100% 00%;
+    grid-template-rows: 100% 0%;
+}
+
+/* ==== Navigation Styles ==== */
+
+nav {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 10vh;
+    background:hsla(240, 10%, 8%, 0.9);
+    position: sticky;
+    opacity: 0.7;
+    z-index: 12;
+}
+
+nav:hover {
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 600;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: sticky;
+}
+
+nav li {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav li p {
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+nav li a {
+    text-decoration: none;
+    align-items: center;
+    vertical-align: center;
+    color: white;
+    font-size: 12px;
+    flex-flow: row nowrap;
+}
+/* ==== Sectional Global Styles ==== */
+
+.section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100% 100%;
+    width: 100vw;
+    /*! height: 100vh; */
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== Sectional Minimalist Styles ==== */
+.cover {
+    background-size: cover;
+}
+.minimalgrids {
+    grid-row-start: 1;
+    background-image: url("img/cat1.png");
+    display: flex;
+    flex-flow: row-reverse;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.business {
+    grid-row-start: 2;
+    background-image: url("img/cat2.png");
+    display: flex;
+    flex-flow: row;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.interactive {
+    grid-row-start: 3;
+    background-image: url("img/cat4.png");
+    display: flex;
+    flex-flow: row-reverse;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.icon {
+    grid-row-start: 4;
+    background-image: url("img/cat3.png");
+    display: flex;
+    flex-flow: row;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+
+.webdata {
+    height: 100%;
+    width: 30vw;
+    background-color: hsla(240, 10%, 8%, 0.9);
+    transition: all 0.5s ease-in-out;
+}
+
+.textbox {
+    border-left: white dashed 3px;
+    width: 90%;
+    height: 80%;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+/* ==== Sectional Text Styles ==== */
+
+.pghead {
+    margin-top: 0%;
+    color: white;
+    font-weight: 700;
+    padding-left: 5%;
+}
+
+.textbox dl {
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.textbox dt {
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 2%;
+}
+
+.textbox dd {
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 3%;
+}
+
+.textbox p {
+    padding-bottom: 0%;
+    line-height: 10px;
+}
+.textbox a {
+    text-decoration: none;
+    color: white;
+}

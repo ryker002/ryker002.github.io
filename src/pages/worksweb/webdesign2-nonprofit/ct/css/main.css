@@ -1,0 +1,484 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #F1F1F8;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 100% 100% 100% 100% 100%;
+    grid-template-rows: 65% 20% 15%;
+    width: 100vw;
+    height: 120vh;
+    max-width: 100%;
+    overflow-y: hidden;
+}
+
+/* ===== NAV BAR STYLES ===== */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 4%;
+    background-color: #F1F1F8;
+    box-shadow: 2px 2px #000000;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.navtitle {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding-left: 1%;
+    align-items: center;
+}
+
+.navtitle img {
+    padding-right: 1%;
+    height: 80%;
+}
+
+.navtitle h1 {
+    padding-right: 2%;
+    font-weight: 400;
+}
+
+.navlinks {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #000000;
+    align-self: center;
+    padding-left: 15%;
+    font-size: 1.25vw;
+}
+
+.navlinks img {
+    padding-left: 15%;
+    height: 40%;
+    width: 10%;
+    align-self: center;
+    justify-content: center;
+}
+
+/* ===== HEADER AND MAIN CONTENT STYLES ===== */
+
+/* === MAINCONTENTSLIDE === */
+
+.swiper-container {
+    width: 100vw;
+}
+.section {
+    background-size: cover;
+    /* width: 100vw; */
+}
+.main {
+    background-image: url("../img/mc/mainContent1.jpg");
+}
+
+.cub {
+    background-image: url("../img/mc/cubsbg@2x.png");
+}
+
+.sco {
+    background-image: url("../img/mc/boysbg@2x.png");
+}
+
+.ven {
+    background-image: url("../img/mc/venbg@2x.png");
+}
+
+.seas {
+    background-image: url("../img/mc/seabg@2x.png");
+}
+
+.expl {
+    background-image: url("../img/mc/expbg@2x.png");
+}
+
+/* === GLOBAL STYLES === */
+.content {
+    display: flex;
+    flex-flow: row;
+}
+
+.mainheadertext {
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 75%;
+    padding-left: 10%;
+    line-height: 0px;
+}
+
+.headlinelarge {
+    font-size: 6vw;
+    padding: 0;
+}
+
+.headlinesmall {
+    font-size: 4vw;
+    padding: 0;
+}
+
+.paragraphtext {
+    line-height: 3vh;
+    font-size: 1.5vw;
+    width: 75%;
+    text-shadow: 2px 2px #000000;
+}
+
+.button {
+    margin-top: 15%;
+    margin-right: 10%;
+    border: #F1F1F8 solid 8px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    border: #888888 solid 8px;
+}
+
+.button a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #F1F1F8;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px #000000;
+}
+
+.boxesTitle {
+    display: flex;
+    flex-flow: row;
+}
+
+.boxesTitle img {
+    padding-right: 2%;
+}
+
+.boxesTitle p {
+    padding-top: 1%;
+}
+
+.paragraphtextboxes {
+    line-height: 3vh;
+    font-size: 1.5vw;
+    width: 75%;
+    text-shadow: 2px 2px #000000;
+    padding-left: 12%;
+}
+
+/* ===== SLIDE AND NAV CONTROLS ===== */
+
+/* === TRANSITIONS AND GLOBAL STYLES === */
+
+.box {
+    transition: all 0.5s ease-in-out;
+}
+
+.groupicon {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.groupicon img {
+    padding-left: 8%;
+    height: 75%;
+}
+
+/* === CUB SCOUTS === */
+
+.cubscouts {
+    background-image: url("../img/dividerbgs/cubbg-nohover.png");
+    background-size: cover;
+    grid-area: 2/1/2/1;
+}
+
+.cubscouts:hover {
+    background-image: url("../img/dividerbgs/cubbg-hover.png");
+}
+
+.cubscouts:active .groupicon img {
+    display: none;
+}
+
+/* === SCOUTS === */
+
+.scout {
+    background-image: url("../img/dividerbgs/scoutsbg-nohover.png");
+    background-size: cover;
+    grid-area: 2/2/2/2;
+}
+
+.scout:hover {
+    background-image: url("../img/dividerbgs/scoutsbg-hover.png");
+}
+
+/* === BENTURE === */
+
+.venture {
+    background-image: url("../img/dividerbgs/venbg-nohover.png");
+    background-size: cover;
+    grid-area: 2/3/2/3;
+}
+
+.venture:hover {
+    background-image: url("../img/dividerbgs/venbg-hover.png");
+}
+
+/* === SEA SCOUTS === */
+
+.sea {
+    background-image: url("../img/dividerbgs/seabg-nohover.png");
+    background-size: cover;
+    grid-area: 2/4/2/4;
+}
+
+.sea:hover {
+    background-image: url("../img/dividerbgs/seabg-hover.png");
+}
+
+/* === EXPLORERS === */
+
+.explorers {
+    background-image: url("../img/dividerbgs/exbg-nohover.png");
+    background-size: cover;
+    grid-area: 2/5/2/5;
+}
+
+.explorers:hover {
+    background-image: url("../img/dividerbgs/exbg-hover.png");
+}
+
+/* ===== FOOTER STYLES ===== */
+
+footer {
+    background-color: #F1F1F8;
+    grid-area: 3/1/3/6;
+    padding: 0;
+    margin: 0;
+}
+
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.copyright {
+    font-size: 1vw;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5%;
+}
+
+.icons {
+    max-width: 18%;
+    padding-top: 1%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.icons svg {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons li {
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks a:hover {
+    color: gray;
+}
+
+.footerLinks {
+    max-width: 60%;
+    padding-left: 0;
+}
+
+/* ===== FONT STYLES */
+
+.aglet {
+    font-family: aglet-slab, sans-serif;
+}
+
+.semibold {
+    font-weight: 500;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.azos {
+    font-family: azo-sans-web, sans-serif;
+}
+
+.omnes {
+    font-family: omnes-pro, sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+
+/* MEDIA QUERIES */
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 1600px) and (max-width: 5000px) {
+    .boxesTitle {
+        padding-top: 2%;
+    }
+
+    .navlinks a {
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .wrapper {
+        grid-template-columns: 100% 100% 100% 100% 100% 100%;
+        grid-template-rows: 100% 20% 20% 20% 20% 20% 15%;
+    }
+    
+    nav {
+        height: 10%;
+
+    }
+
+    .navlinks a {
+        font-size: 3vw;
+    }
+
+    .navtitle h1 {
+        display: none;
+    }
+
+    .navtitle {
+        width: 15%;
+    }
+
+
+    .cubscouts {
+        grid-area: 2/1/2/1;
+    }
+
+    .scout {
+        grid-area: 3/1/3/1;
+    }
+
+    .venture {
+        grid-area: 4/1/4/1;
+    }
+
+    .sea {
+        grid-area: 5/1/5/1;
+    }
+
+    .explorers {
+        grid-area: 6/1/6/1;
+    }
+
+    footer {
+        grid-area: 7/1/7/1;
+    }
+
+    .copyright {
+        font-size: 2vw;
+        max-width: 50%;
+    }
+    
+    .icons {
+        max-width: 50%;
+    }
+
+    footer ul a {
+        font-size: 1vw;
+    }
+
+    .mainheadertext {
+        padding-top: 10%;
+    }
+
+    .paragraphtext, .paragraphtextboxes {
+        font-size: 5vw;
+        line-height: 5vh;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .button {
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .mainheadertext {
+        padding-top: 15%;
+    }
+
+    .paragraphtext, .paragraphtextboxes {
+        font-size: 5vw;
+        line-height: 5vh;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .boxesTitle {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .boxesTitle img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxesTitle p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

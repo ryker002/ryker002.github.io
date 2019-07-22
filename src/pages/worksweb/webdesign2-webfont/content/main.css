@@ -1,0 +1,1021 @@
+
+/* Body Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+/* HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.l-left {
+	float: left;
+}
+
+.l-right {
+	float: right;
+}
+
+.end {
+	margin-top: 30px;
+	font-size: 3em;
+	font-weight: bold;
+	opacity: 0;
+	-webkit-transform: translateY(300px);
+	    -ms-transform: translateY(300px);
+	        transform: translateY(300px);
+	-webkit-transition: opacity, -webkit-transform 1s;
+	        transition: opacity, transform 1s;
+	-webkit-transition-delay: 1s;
+	        transition-delay: 1s;
+}
+/* NAV STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header-top {
+	background: rgba(40, 109, 105, 0.3);
+	height: 70px;
+	padding: 0 10px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 12;
+    box-sizing: border-box;
+    z-index: 10000;
+}
+
+.toggle-menu {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+}
+
+.toggle-menu i {
+	position: absolute;
+	display: block;
+	height: 2px;
+	background: white;
+	width: 30px;
+	left: 10px;
+	-webkit-transition: all .3s;
+	        transition: all .3s;
+}
+
+.toggle-menu i:nth-child(1) {
+	top: 16px;
+}
+
+.toggle-menu i:nth-child(2) {
+	top: 24px;
+}
+
+.toggle-menu i:nth-child(3) {
+	top: 32px;
+}
+
+.open-menu i:nth-child(1) {
+	top: 25px;
+	-webkit-transform: rotateZ(45deg);
+	        transform: rotateZ(45deg);
+}
+
+.open-menu i:nth-child(2) {
+	background: transparent;
+}
+
+.open-menu i:nth-child(3) {
+	top: 25px;
+	-webkit-transform: rotateZ(-45deg);
+	        transform: rotateZ(-45deg);
+}
+
+nav {
+ 	height: 0;
+	opacity: 0;
+  box-sizing: border-box;
+	background: rgba(94, 127, 129, 0.3);
+	position: fixed;
+	top: 70px;
+	width: 100%;
+  -webkit-transition: all 3s;
+          transition: all 3s;
+}
+
+.open-menu ~ nav {
+	opacity: 1;
+ 	padding: 80px 0;
+	z-index: 10015;
+	height: calc(40vh - 70px);
+}
+
+nav ul {
+	padding: 0 10px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    font-family: le-havre, sans-serif;
+    font-weight: 300;  
+    font-style: normal;
+    font-size: 100%;
+    text-transform: lowercase;
+}
+
+nav li {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+nav li a {
+	font-size: 2em;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	-webkit-transition: background .3s;
+            transition: background .3s;
+    text-decoration: none;
+    color: #E5EFEC;
+}
+
+nav li:nth-child(odd) a,
+body.fp-viewing-fifthSection-1 #menu li:nth-child(5) a {
+	background: #6BA5A0;
+}
+
+nav li:nth-child(even) a {
+	background: rgb(97, 150, 145);
+}
+
+nav li:nth-child(odd) a:hover {
+	background: rgb(121, 187, 181);
+}
+
+nav li:nth-child(even) a:hover {
+	background: rgb(130, 199, 193);
+}
+
+nav li.active a,
+body.fp-viewing-fifthSection-1 #menu li:last-child a {
+  background: rgb(140, 216, 210);
+}
+
+/* Wrapper Styles */
+
+
+.wrapperhead {
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 9500;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.wrapperhead h1 {
+    position: relative;
+    margin-left: 20%;
+
+    font-size: 1500%;
+    color: #EA8B73;
+    font-family: le-havre, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    z-index: 9100;
+    top: -126px;
+    left: -109px;
+}
+
+.wrapperhead h1 i {
+    font-style: italic;
+    letter-spacing: 1%;
+    
+}
+
+.wrapperhead h1 b {
+    font-weight: 300;
+    font-style: normal;
+}
+
+.wrapperhead #ship {
+    position: absolute;
+    top: 0%;
+    padding: 0;
+    margin: 0;
+    z-index: 9090;
+}
+
+.ocean {
+    height: 1%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #6BA5A0;
+    z-index: 9100;
+}
+
+.wave {
+    background: url("svg/wave.svg") repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  
+  .wave:nth-of-type(2) {
+    top: -175px;
+    -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+            animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+
+.wrapper {
+    margin: 0;
+    height: auto;
+    background-image: linear-gradient(#6BA5A0, #194741);
+    z-index: 9000;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Background Styles */
+
+.background {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    z-index: 9010;
+    padding-bottom: 30%;
+}
+.backgroundhead {
+    display: flex;
+    margin-left: 30%;
+    height: 80%;
+}
+.backgroundhead h1 {
+    position: relative;
+    left: -5px;
+    top: 2%;
+    margin: 0;
+    padding: 0;
+    font-size: 500%;
+    font-family: le-havre, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    z-index: 9011;
+    writing-mode: vertical-lr;
+    border-left: #E5EFEC solid 15px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.backgroundtext {
+    margin-left: 10%;
+    height: 80%;
+    width: 40%;
+}
+
+.backgroundtext p {
+    color: #E5EFEC;
+    font-family: le-havre, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 200%;
+    line-height: 53px;
+    text-shadow: #696969 0px 1px 1px;
+}
+
+/* Weights Styles */
+
+.weights {
+    width: 100%;
+    position: relative;
+    left: 5%;
+    top: 0%;
+    z-index: 9010;
+    display: flex;
+    margin-bottom: 10%;
+    flex-flow: wrap;
+}
+
+.weights .normalhavre ul {
+    list-style: none;
+    font-family: le-havre, sans-serif;
+    font-style: normal;
+    color: #E5EFEC;
+    font-size: 150%;
+    line-height: 200%;
+    z-index: 9099;
+}
+
+.weights .roundedhavre ul {
+    list-style: none;
+    font-family: le-havre-rounded, sans-serif;
+    font-style: normal;
+    color: #E5EFEC;
+    font-size: 150%;
+    line-height: 200%;
+    z-index: 9099;
+}
+
+.weights #black {
+    font-weight: 900;
+}
+.weights #bold {
+    font-weight: 700;
+}
+.weights #regular {
+    font-weight: 400;
+}
+.weights #light {
+    font-weight: 300;
+}
+.weights #thin {
+    font-weight: 200;
+}
+
+
+.weights .normalhavre, .weights .roundedhavre {
+    display: flex;
+    z-index: 9099;
+}
+
+.weights .weightsnumbnormal, .weights .weightsnumbround {
+    margin-right: 50px;
+}
+
+.weights .weights-content {
+    margin-right: 10%;
+}
+.weightsheader {
+    background-image: url("png/pat-04.png");
+    margin-left: 5%;
+    margin-top: 1%;
+    justify-content: right;
+
+    
+    
+}
+.weights .weightsheader h1 {
+    margin-top: 5%;
+    font-family: le-havre, sans-serif;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    font-size: 1400%;
+    writing-mode: vertical-rl;
+}
+
+/* Letters Styles */
+/* Letters Div */
+.letters {
+    position: relative;
+    margin-top: 5%;
+    height: auto;
+    width: 85%;
+    margin-bottom: 50%;
+}
+/* Letterflex Div */
+.lettersflex {
+    display: flex;
+}
+/* Lettertext Div */
+.letterstext {
+    flex-flow: column nowrap;
+    margin-left: 5%;
+    list-style: none;
+    font-family: le-havre, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #E5EFEC;
+    font-size: 250%;
+    line-height: 200%;
+    text-shadow: #3b3b3b 0px 1px 1px;
+    letter-spacing: 10px;
+}
+/* Letterlower Div */
+.letterslower {
+    letter-spacing: 13.2px;
+}
+/* Letterheader Div */
+.letterheader {
+    margin-left: 5%;
+    font-size: 200%;
+    font-family: le-havre, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    z-index: 9011;
+    writing-mode: vertical-lr;
+    margin-top: 4%;
+    
+}
+
+.letterheader h1 {
+    border-left: #E5EFEC solid 15px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+/* Lettersunder Div */
+.lettersunder {
+    position: relative;
+    width: 100%;
+}
+
+.lettersunder img {
+    width: 120%;
+    position: absolute;
+}
+
+/* Pairings Styles */
+
+/*Pairings div*/
+.pairings {
+    position: relative;
+    /*! width: 85%; */
+    margin-bottom: 20%;
+}
+
+.pairings ul{
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    z-index: 9100;
+}
+
+.pairings h1 {
+    border-bottom: #E5EFEC solid 8px;
+    line-height: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    vertical-align: center;
+}
+
+.pairings h2 {
+    color: #E5EFEC;
+    text-shadow: #696969 0px 1px 1px;
+}
+
+.pairings p {
+    color: #E5EFEC;
+    font-family: le-havre, sans-serif;
+    font-weight: 300;
+    text-shadow: #696969 0px 1px 1px;
+    font-size: 115%;
+}
+
+.pairings li {
+    padding-top: 5%;
+    width: 80%;
+}
+/* Pairingsets div */
+.pairingsets {
+    display: flex;
+    flex-flow: row nowrap;
+    /*! align-items: center; */
+    /*! justify-content: center; */
+    /*! align-content: center; */
+    /*! margin-left: 2%; */
+    /*! margin-right: 2%; */
+    padding: 10px;
+    margin: auto;
+}
+/* Pairing IDs */
+#grotesk {
+font-family: aktiv-grotesk, sans-serif;
+font-style: normal;
+color: #EA8B73;
+text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+}
+
+#filson {
+    font-family: filson-soft, sans-serif;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+}
+
+#bebas {
+    font-family: bebas-neue, sans-serif; 
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+}
+
+#groteskh2 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-style: normal;
+}
+
+#filsonh2 {
+    font-family: filson-soft, sans-serif;
+    font-style: normal;
+}
+
+#bebash2 {
+    font-family: bebas-neue, sans-serif; 
+    font-style: normal;
+}
+
+/* Numbers Styles  */
+/* Number Div  */
+.numbers {
+    position: relative;
+    display: flex;
+    flex-flow: row-reverse;
+    margin-bottom: 20%;
+}
+
+.numbers ul {
+    margin: 0;
+    list-style: none;
+    font-family: le-havre, sans-serif;
+    font-weight: 250;
+    font-size: 1000%;
+    color: #E5EFEC;
+    text-shadow: #696969 0px 1px 1px;
+    display: flex;
+    flex-flow: row wrap;
+    /*! padding-right: 2%; */
+    width: 100%;
+}
+
+.numbers li {
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
+.numbers p {
+    text-align: center;
+    vertical-align: middle;
+    border: #E5EFEC solid 2px;
+    border-radius: 100%;
+    padding: 0;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    margin: 10% 0 10% 0;
+}
+/* Numberhead Div */
+.numberhead {
+    position: relative;
+    right: 0;
+    margin-right: 10%;
+    /*! margin-top: 10%; */
+
+}
+
+.numberhead h1 {
+    writing-mode: vertical-lr;
+    border-left: #E5EFEC solid 15px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-size: 1000%;
+    font-family: le-havre, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    height: 1000px;
+}
+
+/* Number IDs */
+#orange {
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    font-weight: 700;
+    border: none;
+}
+
+.numberdigits {
+    width: 100%;
+}
+/* Glyphs Styles */
+/* Glyphs Div */
+
+.glyphs {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    background: url("content/svg/bottom.svg");
+}
+
+.glyphs ul {
+    margin: 0;
+    list-style: none;
+    font-family: le-havre, sans-serif;
+    font-weight: 700;
+    font-size: 800%;
+    color: #E5EFEC;
+    text-shadow: #696969 0px 1px 1px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    z-index: 3;
+    padding-right: 2%;
+    /*! display: block-inline; */
+}
+
+.glyphs li {
+    /*! padding-right: 20%; */
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 9100;
+}
+
+.glyphs p {
+    padding: 0;
+    z-index: 9100;
+}
+/* Numberhead Div */
+.glyphhead {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    right: 0;
+    /*! margin-right: 20%; */
+    margin-top: 10%;
+    z-index: 9100;
+}
+
+.glyphhead h1 {
+    writing-mode: vertical-lr;
+    border-left: #E5EFEC solid 15px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-size: 1000%;
+    font-family: le-havre, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    height: 1000px;
+    z-index: 9100;
+}
+
+.glyphsnum {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* GlyphBottom Div */
+.glyphbottom svg{
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left: 0;
+    z-index: 9090;
+
+}
+/* Number IDs */
+#orangeglyphs {
+    color: #EA8B73;
+    text-shadow: rgb(192, 115, 96) 0px 1px 1px;
+    font-weight: 700;
+    border: none;
+}
+/* Bubbles */
+/* Background Bubbles */
+#bubble01 {
+    position: absolute;
+    left: 20%;
+    top: 55%;
+    width: 2%;
+    transform: rotateZ(20deg)
+}
+
+#bubble02 {
+    position: absolute;
+    left: 40%;
+    top: 52%;
+    width: 2%;
+    transform: rotateZ(-10deg)
+}
+
+#bubble03 {
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    width: 3%;
+    transform: rotateZ(0deg)
+}
+
+#bubble04 {
+    position: absolute;
+    left: 23%;
+    top: 85%;
+    width: 1.6%;
+    transform: rotateZ(10deg)
+}
+
+#bubble05 {
+    position: absolute;
+    left: 38%;
+    top: 100%;
+    width: 2.2%;
+    transform: rotateZ(-10deg)
+}
+
+#bubble06 {
+    position: absolute;
+    left: 18%;
+    top: 120%;
+    width: 3%;
+    transform: rotateZ(-15deg)
+}
+
+/* Weights Bubbles */
+
+#bubble07 {
+    position: absolute;
+    left: 22%;
+    top: 60%;
+    width: 2%;
+    transform: rotateZ(30deg)
+}
+
+#bubble08 {
+    position: absolute;
+    left: 30%;
+    top: 52%;
+    width: 2.1%;
+    transform: rotateZ(20deg)
+}
+
+#bubble09 {
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    width: 2.5%;
+    transform: rotateZ(-10deg)
+}
+
+#bubble10 {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    width: 2%;
+    transform: rotateZ(-45deg)
+}
+
+/* Numbers Bubbles */
+
+#bubble11 {
+    position: absolute;
+    left: 75%;
+    top: 0%;
+    width: 4%;
+    transform: rotateZ(-30deg)
+}
+
+#bubble12 {
+    position: absolute;
+    left: 82%;
+    top: 10%;
+    width: 3.5%;
+    transform: rotateZ(20deg)
+}
+
+#bubble13 {
+    position: absolute;
+    left: 78%;
+    top: 30%;
+    width: 2%;
+    transform: rotateZ(-10deg)
+}
+
+#bubble14 {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    width: 1.5%;
+    transform: rotateZ(-45deg)
+}
+
+#bubble15 {
+    position: absolute;
+    left: 76%;
+    top: 50%;
+    width: 2%;
+    transform: rotateZ(45deg)
+}
+
+/* Sharks */
+
+#glyphshark {
+    width: 20%;
+    z-index: 9099;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+}
+
+#pairingshark {
+    width: 10%;
+    z-index: 0;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: rotate(-10deg);
+}
+
+#pairingshark2 {
+    width: 13%;
+    z-index: 0;
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    transform: rotate(10deg);
+}
+
+#lettershark {
+    width: 10%;
+    z-index: 0;
+    position: absolute;
+    bottom: 28%;
+    left: 61%;
+    /*! transform: rotate(10deg); */
+}
+
+#weightshark {
+
+        width: 10%;
+        z-index: 9000;
+        position: absolute;
+        bottom: 50%;
+        left: 22%;
+        transform: rotate(20deg);
+
+}
+/* Ocean Keyframes */
+  
+  @-webkit-keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @-webkit-keyframes swell {
+    0%, 100% {
+      -webkit-transform: translate3d(0, -25px, 0);
+              transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(0, 5px, 0);
+              transform: translate3d(0, 5px, 0);
+    }
+  }
+  @keyframes swell {
+    0%, 100% {
+      -webkit-transform: translate3d(0, -25px, 0);
+              transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(0, 5px, 0);
+              transform: translate3d(0, 5px, 0);
+    }
+  }
+
+
+/* ---- Media Styles ----
+  #
+  #
+  #
+  #
+  #
+  */
+
+/* --------- Macbook Pro ---------- */
+@media (min-width: 755px) and (max-width: 1500px) {
+    .ocean {
+        bottom: 250px;
+    }
+
+    #glyphshark {
+        width: 20%;
+        z-index: 9099;
+        position: absolute;
+        bottom: 35%;
+        left: 50%;
+    }
+    
+    #pairingshark {
+        width: 10%;
+        z-index: 0;
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+    
+    #pairingshark2 {
+        width: 13%;
+        z-index: 0;
+        position: absolute;
+        bottom: -10%;
+        left: 10%;
+        transform: rotate(10deg);
+    }
+    
+    #lettershark {
+        width: 10%;
+        z-index: 0;
+        position: absolute;
+        bottom: 39%;
+        left: 61%;
+        /*! transform: rotate(10deg); */
+    }
+    
+    #weightshark {
+    
+            width: 10%;
+            z-index: 9000;
+            position: absolute;
+            bottom: 44%;
+            left: 22%;
+            transform: rotate(20deg);
+    
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+    .ocean {
+        display: none;
+    }
+
+    .wrapperhead h1 {
+        font-size: 800%;
+    }
+
+    .weightsheader {
+        background-image: url("png/pat-04.png");
+        margin-left: 5%;
+        margin-top: 1%;
+        justify-content: center;
+    }
+    .weights .weightsheader h1 {
+        font-size: 800%;
+        writing-mode: horizontal-tb;
+    }
+
+    .pairingsets {
+        flex-flow: column nowrap;
+    }
+
+    .glyphhead h1 {
+        font-size: 800%;
+    }
+
+    .glyphs ul {
+        font-size: 400%;
+    }
+}
