@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-    background-image: url('../img/bg.jpg');
+    background-image: url('https://res.cloudinary.com/daasu66it/image/upload/f_auto,q_auto/v1563902763/JamesBootHomepage/homepageBG.jpg');
     height: 100vh;
 }
 
@@ -48,7 +48,7 @@ body {
 /* Parallax Effect */
 
 .parallaxAboutMe {
-    background-image: url(https://pro2-bar-s3-cdn-cf6.myportfolio.com/9b8e06484487e574dd534783e49e6c2f/7ee6a545-cab1-4897-9812-51b31335e4d9_rw_1920.jpg?h=abd89101527bc0ad8de8035c848ad90d);
+    background-image: url('https://res.cloudinary.com/daasu66it/image/upload/f_auto,q_auto/v1563903049/JamesBootHomepage/Homepage%20Parallax%20Background.jpg');
     height: 100%;
 }
 

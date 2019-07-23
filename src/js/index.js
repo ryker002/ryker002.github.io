@@ -58,7 +58,7 @@ function galleryObject(name) {
     blueimp.Gallery(links, options);
 };
 }
-
+// PHOTOGRAPHY
 galleryObject('trevorBody');
 galleryObject('nickandpeterBody');
 galleryObject('codeyandkylieBody');
@@ -69,5 +69,11 @@ galleryObject('nikkiBody');
 galleryObject('manipulationBody');
 galleryObject('danielandalexBody');
 galleryObject('danielBody');
+//  UI
 galleryObject('dirtyCodeBody');
 galleryObject('nursingAppBody');
+// WEB
+galleryObject('dragBody');
+galleryObject('webfontBody');
+galleryObject('superherochildrenBody');
+galleryObject('scoutsBody');
