@@ -1,0 +1,10 @@
+galleryObject('typographicgridsBody');
+galleryObject('supersonsBody');
+galleryObject('infographicBody');
+galleryObject('religiousiconsBody');
+galleryObject('adoptiondayBody');
+galleryObject('conceptualcontrastBody');
+galleryObject('vectorbuildingBody');
+galleryObject('vectorportraitBody');
+galleryObject('insomniaBody');
+galleryObject('brokenboneBody');
