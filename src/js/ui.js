@@ -1,0 +1,2 @@
+galleryObject('dirtyCodeBody');
+galleryObject('nursingAppBody');
