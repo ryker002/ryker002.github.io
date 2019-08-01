@@ -3,4 +3,4 @@ galleryObject('webfontBody');
 galleryObject('superherochildrenBody');
 galleryObject('scoutsBody');
 galleryObject('kioskBody');
-galleryObject('beautydesign');
+galleryObject('beautydesignBody');
