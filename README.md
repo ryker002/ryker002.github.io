@@ -1,4 +1,4 @@
-#Homepage Design for James Lewandowski Portfolio
+# Homepage Design for James Lewandowski Portfolio
 
 [Live Preview](http://ryker002.github.io) 
 
