@@ -58,3 +58,8 @@ function galleryObject(name) {
     blueimp.Gallery(links, options);
 };
 }
+
+// Responsive Text
+
+$("body").responsiveText();
+
